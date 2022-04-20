@@ -1,0 +1,3 @@
+[submodule "image-quality-assessment"]
+	path = image-quality-assessment
+	url = https://github.com/kligvasser/image-quality-assessment
