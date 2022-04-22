@@ -1,0 +1,46 @@
+### ex2 ###
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-style-weight 1 --scales 0.5 0.75 --features relu4_1 relu5_1 --bandwidth 500
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-wasserstein-weight 1 --scales 0.5 0.75 --features relu4_1 relu5_1 --bandwidth 1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --l1-weight 1 --bandwidth 50
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --l2-weight 1 --bandwidth 1000 # mse
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --perceptual-weight 1 --bandwidth 1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --consistency-weight 1  --bandwidth 100
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --bandwidth 1 --contextual-weight 1
+
+### ex3 ###
+python3 ex3.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --output ./outputs/PieAPP-noref.csv --reg-to-load ../results/x4/style/80x80/resnet_se/2021-03-08_21-51-20/resnet_se_e2000.pt --scale 0.25 --bandwidth 100 --features relu1_2 relu2_1 relu2_2 relu3_1
+
+### layers ###
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --perceptual-weight 1 --bandwidth 1 --features relu2_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-style-weight 1 --scales 0.5 --bandwidth 1000 --features relu2_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --style-weight 1 --bandwidth 500 --features relu2_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --multi-style-weight 1 --bandwidth 1000 --scales 1.0 0.5 --features relu2_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --contextual-weight 1 --bandwidth 1 --features relu2_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --wasserstein-weight 10 --bandwidth 1 --features relu2_1
+
+
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --perceptual-weight 1 --bandwidth 1 --features relu3_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-style-weight 1 --scales 0.5 --bandwidth 1000 --features relu3_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --style-weight 1 --bandwidth 500 --features relu3_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --multi-style-weight 1 --bandwidth 1000 --scales 1.0 0.5 --features relu3_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --contextual-weight 1 --bandwidth 1 --features relu3_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --wasserstein-weight 10 --bandwidth 1 --features relu3_1
+
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --perceptual-weight 1 --bandwidth 1 --features relu4_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-style-weight 1 --scales 0.5 --bandwidth 1000 --features relu4_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --style-weight 1 --bandwidth 500 --features relu4_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --multi-style-weight 1 --bandwidth 1000 --scales 1.0 0.5 --features relu4_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --contextual-weight 1 --bandwidth 1 --features relu4_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --wasserstein-weight 10 --bandwidth 1 --features relu4_1
+
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --perceptual-weight 1 --bandwidth 1 --features relu5_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --recurrent-style-weight 1 --scales 0.5 --bandwidth 1000 --features relu5_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --style-weight 1 --bandwidth 500 --features relu5_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --multi-style-weight 1 --bandwidth 1000 --scales 1.0 0.5 --features relu5_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --contextual-weight 1 --bandwidth 1 --features relu5_1
+python3 ex2.py --root /media/klig/hd/datasets/studies/pieapp/ --root-labels /media/klig/hd/datasets/studies/pieapp/labels/test/ --wasserstein-weight 10 --bandwidth 1 --features relu5_1
+
+python3 ex4.py --root /home/klig/datasets/pieapp/ --root-labels /home/klig/datasets/pieapp/labels/test/ --bandwidth 2 --max-size 1
+
+python3 ex15.py --root /home/klig/datasets/imagenet/val/n09421951 
+python3 ex15.py --root /home/klig/datasets/imagenet/val/n04589890

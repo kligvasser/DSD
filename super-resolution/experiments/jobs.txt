@@ -1,0 +1,8 @@
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu2_1 --style-type style
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu2_1 --style-type rec-style
+
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu3_1 --style-type style
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu3_1 --style-type rec-style
+
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu4_1 --style-type style
+python3 ex3.py --image-source ../../images/style/108082.png --image-target ../../images/style/123074.png --features relu4_1 --style-type rec-style
